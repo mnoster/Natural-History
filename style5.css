@@ -37,6 +37,9 @@ h1{
     font-weight: 400;
     padding-left: 20px;
 }
+h2{
+	margin: 0 10px 4px 10px;
+}
 #p2{
 	border-radius: 25px;
 	font-family: Times;
@@ -58,8 +61,8 @@ p:focus{
 	text-align: center;
 
 }	
-img{
-	height:70%;
+#phScale{
+	height:40vh;
 	width:auto;
 }
 #info1{
@@ -87,14 +90,63 @@ img{
 	font-size: 5vmax;
 	margin-left: 25px;
 	margin-top:30px;
+	text-decoration: underline;
+	text-align: center;
 }
 #water_types{
 	color:#C8C8C8
 	font-size:4vmax;
+	margin-left: 10px;
+	list-style-type: none;
+	text-align: left;
+}
+#waterTypesTitle{
+	text-decoration:underline;
+	padding-top: 100px;
 }
 #allinfo{
 	text-align:center;
 }
 #sciencephoto{
 	float: left;
+}
+#header2{
+	text-decoration: underline;
+}
+#turbidWater{
+	margin-left: 30px;
+	height:20vmax;
+	width: 40vmax;
+}
+#videos{
+	height:50%;
+	width:60%;
+	margin-top:10px;
+}
+.vid{
+	margin-top: 10px;
+}
+#headerWords{
+	color:white;
+	font-size: 2vmin;
+
+}
+#content{
+	text-align: center;
+}
+/*-----------------neary lagoon page------------------*/
+#changeimagesize{
+	height:60vh;
+	width:auto;
+	float:left;
+}
+#info4{
+
+	margin-left: 10px;
+}
+#headInfo{
+	text-align: right;
+	display: inline-block;
+	float: right;
+	position: relative;
 }

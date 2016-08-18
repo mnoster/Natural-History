@@ -50,6 +50,10 @@ p{
 	background-color: black;
 
 }
+.zoo{
+	display: inline-block;
+	color: orange;
+}
 #p1{
 	border-radius: 25px;
 	font-family: Times;
@@ -122,16 +126,21 @@ li{
 }
 
 span {
-	display: none;
-	text-align: center;
 	color:white;
 	font-size: 18px;
 	font-family:Verdana;
-
 	float:left;
 }
+.all-photos{
+	text-align: center;
 
-#daphnia:hover span{
+}
+.zoo-title{
+	color:white;
+	text-shadow: 2px 2px #ff0000;
+}
+
+/*#daphnia:hover span{
 	display: block;
 }
 #copepod:hover span{
@@ -139,7 +148,7 @@ span {
 }
 #mlarvae:hover span{
 	display:block;
-}
+}*/
 
 
 

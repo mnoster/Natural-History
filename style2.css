@@ -82,8 +82,8 @@ p:focus{
 	background-color: purple;	
 }	
 img{
-	width:170px;
-	height:150px; /* might need to be auto*/
+	width:14vmax;
+	height:14vmax; /* might need to be auto*/
 
 }
 /*img:hover {
@@ -103,11 +103,12 @@ li{
 	display: inline;
 	padding: 3px;
 }
-#info1{
-	font-size:2.5vmax;
+.zoo-info{
+	color:white;
+	font-size: 20px;
 }
 .row2{
-	margin-top: 150px;
+	margin-top: 0px;
 }
 #microphotos{
 	text-align: center;

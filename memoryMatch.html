@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Guessing Game">
+    <meta name="author" content="Nicholas Porter">
+    <meta name="keywords" content="Birds, Neary Lagoon, Santa Cruz, Wetland Walk">
+    <title>Neary Lagoon Memory Match</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="guess.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="memoryMatch.js"></script>
+</head>
+<body ng-controller="appController as ac">
+<div class="main container-fluid">
+    <header >
+        <logo><img src="MemoryMatchPhotos/NearyLagoon.jpg"></logo>
+        <h1>Santa Cruz Birds Memory Match</h1>
+    </header>
+    <div class="row">
+        <div class="cards col-xs-12 card-rows">
+            <div class="card-area row">
+            <card></card>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-nav col-md-10">
+    <h2 class="stats">Stats:</h2>
+    <ul>
+        <li class="attempts">Number of Matches</li>
+        {{ac.matchCounter}}
+    </ul>
+    <ul>
+        <li>Accuracy</li>
+        {{ac.accuracy}}
+    </ul>
+    <ul>
+        <li>Times Played<p class="times-played"></p></li>
+        {{ac.timesPlayed}}
+    </ul>
+    <button id="reset-game" ng-click ="ac.reset()">Reset Game</button>
+    <audio controls loop>
+        <source src="Sounds/Plop2-loop.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<img id='fish' src="MemoryMatchPhotos/fish.png">
+</body>
+</html>
