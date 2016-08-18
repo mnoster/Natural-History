@@ -10,19 +10,20 @@ h1::first-letter{
     font-size: 80px;
     color: red;
 }
+header{
+    padding-top: 15px;
+}
 .main{
     text-align: center;
     background-image: url('MemoryMatchPhotos/landscape.png');
     background-repeat: no-repeat;
     background-position: center;
-    margin:-8px;
+
 }
 .card-contain{
     margin:5px;
 }
-.card-contain:hover{
-    box-shadow: greenyellow 4px 4px;
-}
+
 header{
     background-image: url("MemoryMatchPhotos/background birds.png");
     border-radius: 25px;
@@ -48,18 +49,25 @@ header{
 
 .back img{
     height: 125px;
-    width: 125px;
+    width: 100%;
 }
 .front{
     position: absolute;
 }
+
 .front img{
-    height: 129px;
-    width: 125px;
+    height: 125px;
+    width: 100%;
 }
+.front:hover{
+    box-shadow: #fff300 4px 4px;
+
+}
+
 .card-contain{
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 .card-rows{
     margin: 50px;
@@ -73,4 +81,32 @@ header{
     text-align: center;
     padding:10px 10px 0 10px;
     color:white;
+}
+
+/*---------------------*/
+.nav{
+    height: 30px;
+    width: 100%;
+    background-color: #C8C8C8;
+}
+.nav ul{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.nav ul li{
+    display: inline;
+    color:inherit;
+    text-decoration: none;
+
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+#home{
+    border-right: 1px solid gray;
+    padding-right: 12px;
+}
+#museum{
+    padding-left: 30px;
 }

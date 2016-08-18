@@ -86,12 +86,7 @@ img{
 	height:14vmax; /* might need to be auto*/
 
 }
-/*img:hover {
-    transform: scale(2, 2);
-    opacity: 1;
-    position: relative; 
-}
-*/
+
 
 .color{
 color:green;
@@ -108,9 +103,9 @@ li{
 	font-size: 20px;
 }
 .row2{
-	margin-top: 0px;
+	margin-top: 0;
 }
-#microphotos{
+.microphotos{
 	text-align: center;
 }
 #color{

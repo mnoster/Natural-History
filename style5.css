@@ -1,7 +1,6 @@
-
 #container{
 	border-style: solid;
-	border-color: black
+	border-color: black;
 	border: 2px;
 	display: inline-block;
 }
@@ -56,7 +55,6 @@ p:focus{
 	transition: background 5s, color 2s
 }
 
-}
 #content{
 	text-align: center;
 
@@ -66,20 +64,22 @@ p:focus{
 	width:auto;
 }
 #info1{
-	font-style: ;
-	margin:10px 20px 0 20px;
 	font-size: 3vmax;
 	font-family: Times;
 	margin: 10px 20px 10px 20px;
 }
-#color{
+.oxy-info{
+	color: #300000;
+	line-height: 2;
+}
+.word-color{
 	color:green;
 }
 #color2{
 	color: blue;
 }
 #info2{
-	color:#C8C8C8
+	color:#C8C8C8;
 	font-style: oblique;
 	margin:10px 20px 0 20px;
 	font-size: 3vmax;
@@ -94,11 +94,12 @@ p:focus{
 	text-align: center;
 }
 #water_types{
-	color:#C8C8C8
+	/*color:#C8C8C8;*/
 	font-size:4vmax;
 	margin-left: 10px;
 	list-style-type: none;
 	text-align: left;
+	color:white;
 }
 #waterTypesTitle{
 	text-decoration:underline;
@@ -134,7 +135,7 @@ p:focus{
 #content{
 	text-align: center;
 }
-/*-----------------neary lagoon page------------------*/
+/*-----------------Neary lagoon page------------------*/
 #changeimagesize{
 	height:60vh;
 	width:auto;

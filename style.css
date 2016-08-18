@@ -1,9 +1,7 @@
-/*body{
-	background-image: url("negative copepods.jpeg");*/
-}
+
 #container{
 	border-style: solid;
-	border-color: black
+	border-color: black;
 	border: 2px;
 	display: inline-block;
 }
