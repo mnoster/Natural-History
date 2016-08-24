@@ -57,16 +57,22 @@ p:focus{
 
 #content{
 	text-align: center;
-
 }	
 #phScale{
-	height:40vh;
-	width:auto;
+	width:100%;
+}
+#sciencephoto{
+	display: inline-block;
 }
 #info1{
-	font-size: 3vmax;
+	font-size: 14px;
 	font-family: Times;
 	margin: 10px 20px 10px 20px;
+}
+.ph_info_paragraph{
+	display: inline-block;
+	font-size: 25px;
+	padding:10px;
 }
 .oxy-info{
 	color: #300000;
