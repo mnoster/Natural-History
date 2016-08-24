@@ -1,16 +1,17 @@
 <!doctype html>
 <html style="background-color: #600000">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' />
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
         <link rel='stylesheet' href='style5.css' />
         <title>Turbidity and Dissolved Oxygen</title>
     </head>
-    <body style="background-color: #600000">
+    <body style="background-color: #04a7ff">
     <div class="nav">
         <div class="col-xs-12 col-md-10">
             <ul id='navlist'>
-                <li><a id="home" href="Side Project.html">Home</a></li>
+                <li><a id="home" href="home.html">Home</a></li>
                 <li><a id="museum" href="http://www.santacruzmuseum.org/">Santa Cruz Natural History Museum</a></li> 
                 
             </ul>
@@ -19,7 +20,7 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-12">
+                    <div class="col-xs-12 ">
                         <h1 style="color:white">Turbidity and Dissolved Oxygen</h1>
                     </div>
                 </div>
@@ -30,33 +31,30 @@
             <div class="container">
                 <p id = "p2"></p>
             </div>
-                <div id="content">
-                    <p id="info2" style="color:#C8C8C8">
-                        Turbidity is the cloudiness of a liquid due to various types of particles such as <span id="color"> dirt, pollutants, and organisms</span>. Water with high turbidity usually indicates poor water quality. Similar to how smoke pollutes the air, water can be polluted cars, boats, and trash. Humans are the number one polluters of water and air.
-                    </p>
-                    <img src="turbidity.jpg">
-                    <h2 id="disox">Dissolved Oxygen</h1>
+                <div class="content" id="content">
+                    <h3 class = "oxy-info" >
+                        Turbidity is the cloudiness of a liquid due to various types of particles such as <span class="word-color"> dirt, pollutants, and organisms</span>. Water with high turbidity usually indicates poor water quality. Similar to how smoke pollutes the air, water can be polluted by cars, boats, and trash. Humans are the number one polluters of water and air...but you can make difference!
+
+                    </h3>
+                    <img id="turbidWater" src="Images/turbidity.jpg">
+                    <h2 id="disox">Dissolved Oxygen</h2>
                     <h2 style="color:yellow; margin-left:20px;">How does oxygen get into the water?</h2>
-                    <p id="info2" style="color:#C8C8C8">
-                        Dissolved Oxygen is the amount of oxygen present in the water. There are many ways for oxygen to get into the water such as<span id="color"> algae releasing oxygen during photosynthesis</span>, oxygen from the atmosphere, or <span id="color2">rivers trap air in the water when it flows.</span>
-                    </p>
+                    <h4  class = "oxy-info">
+                        Dissolved Oxygen is the amount of oxygen present in the water. There are many ways for oxygen to get into the water such as<span class="word-color"> algae releasing oxygen during photosynthesis</span>, oxygen from the atmosphere, or <span class="word-color2">rivers that trap air in the water when it flows.</span>
+                    </h4>
                     <br/>
-                    <p style="color:#C8C8C8">
-                        <h2 style="color:#C8C8C8">Here are different the types of water:</h2>
-                        <ul id="water_types" style="color:#C8C8C8; font-size: 3vmax;" >
+                    <p class="color">
+                        <h2 id="waterTypesTitle" style="color:yellow">Here are different the types of water:</h2>
+                        <ul id="water_types" >
                             <li>Brackish</li>
                             <li>Freshwater</li>
                             <li>Saline</li>
                             <li>Seawater</li>
                             <li>Brine</li>
                         </ul>
-
                     </p>
-
                 </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-        <script src="script.js"></script>
     </body>
 </html>

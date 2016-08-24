@@ -1,0 +1,112 @@
+body{
+    background-color: #6ab7ff;
+    font-family:"SansSerif", "Rockwell", "Times New Roman";
+}
+h1{
+    font-weight:bold;
+    font-size: 50px;
+}
+h1::first-letter{
+    font-size: 80px;
+    color: red;
+}
+header{
+    padding-top: 15px;
+}
+.main{
+    text-align: center;
+    background-image: url('MemoryMatchPhotos/landscape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.card-contain{
+    margin:5px;
+}
+
+header{
+    background-image: url("MemoryMatchPhotos/background birds.png");
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+/*-------------------------------stats--------------------------------------*/
+.bottom-nav{
+    border:1px solid black;
+    margin:40px;
+    text-align: left;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.stats{
+    display: inline-block;
+    padding-left: 20px;
+}
+#reset-game{
+    margin: 8px;
+}
+
+.back img{
+    height: 125px;
+    width: 100%;
+}
+.front{
+    position: absolute;
+}
+
+.front img{
+    height: 125px;
+    width: 100%;
+}
+.front:hover{
+    box-shadow: #fff300 4px 4px;
+
+}
+
+.card-contain{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.card-rows{
+    margin: 50px;
+}
+#fish{
+    padding-left: 100px;
+    /*animatation: pusle*/
+}
+.bird-name{
+    position: absolute;
+    text-align: center;
+    padding:10px 10px 0 10px;
+    color:white;
+}
+
+/*---------------------*/
+.nav{
+    height: 30px;
+    width: 100%;
+    background-color: #C8C8C8;
+}
+.nav ul{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.nav ul li{
+    display: inline;
+    color:inherit;
+    text-decoration: none;
+
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+#home{
+    border-right: 1px solid gray;
+    padding-right: 12px;
+}
+#museum{
+    padding-left: 30px;
+}

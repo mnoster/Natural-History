@@ -1,11 +1,12 @@
-/*body{
-	background-image: url("negative copepods.jpeg");*/
-}
 #container{
-	border-style: solid;
-	border-color: black
-	border: 2px;
+	border: 2px solid black;
 	display: inline-block;
+}
+h1{
+	border-left: 2px solid blue;
+	font-size: 48px;
+	font-weight: 400;
+	padding-left: 20px;
 }
 .nav{
 	height: 10%;
@@ -20,25 +21,22 @@
 	display: inline;
 	color:inherit;
 	text-decoration: none;
-
 }
 .nav ul li a {
 	text-decoration: none;
 	color: #555;
 }
+.nav ul li:hover{
+	font-weight: 500;
+}
 #home{
 	border-right: 1px solid gray;
-	padding-right: 12px;
+	padding-right: 10px;
 }
 #museum{
-	padding-left: 30px;
+	padding-left: 15px;
 }
-h1{
-	border-left: 2px solid blue;
-    font-size: 48px;
-    font-weight: 400;
-    padding-left: 20px;
-}
+
 p{
 	border-radius: 25px;
 	font-family: Times;
@@ -82,17 +80,10 @@ p:focus{
 	background-color: purple;	
 }	
 img{
-	width:170px;
-	height:150px; /* might need to be auto*/
+	width:14vmax;
+	height:14vmax; /* might need to be auto*/
 
 }
-/*img:hover {
-    transform: scale(2, 2);
-    opacity: 1;
-    position: relative; 
-}
-*/
-
 .color{
 color:green;
 }
@@ -103,13 +94,14 @@ li{
 	display: inline;
 	padding: 3px;
 }
-#info1{
-	font-size:2.5vmax;
+.zoo-info{
+	color:white;
+	font-size: 20px;
 }
 .row2{
-	margin-top: 150px;
+	margin-top: 0;
 }
-#microphotos{
+.microphotos{
 	text-align: center;
 }
 #color{

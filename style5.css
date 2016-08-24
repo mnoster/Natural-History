@@ -1,7 +1,6 @@
-
 #container{
 	border-style: solid;
-	border-color: black
+	border-color: black;
 	border: 2px;
 	display: inline-block;
 }
@@ -18,24 +17,29 @@
 	display: inline;
 	color:inherit;
 	text-decoration: none;
-
 }
 .nav ul li a {
 	text-decoration: none;
 	color: #555;
 }
+.nav ul li:hover{
+	font-weight: 500;
+}
 #home{
 	border-right: 1px solid gray;
-	padding-right: 12px;
+	padding-right: 10px;
 }
 #museum{
-	padding-left: 30px;
+	padding-left: 15px;
 }
 h1{
 	border-left: 2px solid blue;
     font-size: 48px;
     font-weight: 400;
     padding-left: 20px;
+}
+h2{
+	margin: 0 10px 4px 10px;
 }
 #p2{
 	border-radius: 25px;
@@ -53,30 +57,37 @@ p:focus{
 	transition: background 5s, color 2s
 }
 
-}
 #content{
 	text-align: center;
-
 }	
-img{
-	height:70%;
-	width:auto;
+#phScale{
+	width:100%;
+}
+#sciencephoto{
+	display: inline-block;
 }
 #info1{
-	font-style: ;
-	margin:10px 20px 0 20px;
-	font-size: 3vmax;
+	font-size: 14px;
 	font-family: Times;
 	margin: 10px 20px 10px 20px;
 }
-#color{
+.ph_info_paragraph{
+	display: inline-block;
+	font-size: 25px;
+	padding:10px;
+}
+.oxy-info{
+	color: #300000;
+	line-height: 2;
+}
+.word-color{
 	color:green;
 }
 #color2{
 	color: blue;
 }
 #info2{
-	color:#C8C8C8
+	color:#C8C8C8;
 	font-style: oblique;
 	margin:10px 20px 0 20px;
 	font-size: 3vmax;
@@ -87,14 +98,64 @@ img{
 	font-size: 5vmax;
 	margin-left: 25px;
 	margin-top:30px;
+	text-decoration: underline;
+	text-align: center;
 }
 #water_types{
-	color:#C8C8C8
+	/*color:#C8C8C8;*/
 	font-size:4vmax;
+	margin-left: 10px;
+	list-style-type: none;
+	text-align: left;
+	color:white;
+}
+#waterTypesTitle{
+	text-decoration:underline;
+	padding-top: 100px;
 }
 #allinfo{
 	text-align:center;
 }
 #sciencephoto{
 	float: left;
+}
+#header2{
+	text-decoration: underline;
+}
+#turbidWater{
+	margin-left: 30px;
+	height:20vmax;
+	width: 40vmax;
+}
+#videos{
+	height:50%;
+	width:60%;
+	margin-top:10px;
+}
+.vid{
+	margin-top: 10px;
+}
+#headerWords{
+	color:white;
+	font-size: 2vmin;
+
+}
+#content{
+	text-align: center;
+}
+/*-----------------Neary lagoon page------------------*/
+#changeimagesize{
+	height:60vh;
+	width:auto;
+	float:left;
+}
+#info4{
+
+	margin-left: 10px;
+}
+#headInfo{
+	text-align: right;
+	display: inline-block;
+	float: right;
+	position: relative;
 }

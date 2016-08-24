@@ -1,9 +1,6 @@
-/*body{
-	background-image: url("negative copepods.jpeg");*/
-}
 #container{
 	border-style: solid;
-	border-color: black
+	border-color: black;
 	border: 2px;
 	display: inline-block;
 }
@@ -26,18 +23,20 @@ h1{
 	display: inline;
 	color:inherit;
 	text-decoration: none;
-
 }
 .nav ul li a {
 	text-decoration: none;
 	color: #555;
 }
+.nav ul li:hover{
+	font-weight: 500;
+}
 #home{
 	border-right: 1px solid gray;
-	padding-right: 12px;
+	padding-right: 10px;
 }
 #museum{
-	padding-left: 30px;
+	padding-left: 15px;
 }
 p{
 	border-radius: 25px;
@@ -49,6 +48,10 @@ p{
 	width: 100%;
 	background-color: black;
 
+}
+.zoo{
+	display: inline-block;
+	color: orange;
 }
 #p1{
 	border-radius: 25px;
@@ -122,16 +125,21 @@ li{
 }
 
 span {
-	display: none;
-	text-align: center;
 	color:white;
 	font-size: 18px;
 	font-family:Verdana;
-
 	float:left;
 }
+.all-photos{
+	text-align: center;
 
-#daphnia:hover span{
+}
+.zoo-title{
+	color:white;
+	text-shadow: 2px 2px #ff0000;
+}
+
+/*#daphnia:hover span{
 	display: block;
 }
 #copepod:hover span{
@@ -139,7 +147,7 @@ span {
 }
 #mlarvae:hover span{
 	display:block;
-}
+}*/
 
 
 

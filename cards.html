@@ -1,0 +1,9 @@
+<div class="col-xs-3 col-sm-2  card-contain" ng-repeat='card in ac.imgObjArray track by $index' ng-mouseup="ac.clickCards(card)">
+    <div class="bird-cards front" ng-hide="card.hide_back" >
+        <img src="MemoryMatchPhotos/monarch.jpeg" alt="Monarch Butterfly">
+    </div>
+    <div class="bird-cards back">
+        <span class = "bird-name" ng-show = "card.show_name">{{card.birdName}}</span>
+        <img ng-src="{{card.url}}">
+    </div>
+</div>
