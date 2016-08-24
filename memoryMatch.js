@@ -71,7 +71,7 @@ app.controller("appController", function ($timeout) {
         self.clickCardCounter++; //increases the click counter by one, later to be used to determine accuracy
         self.accuracy = Math.round((self.matchCounter *2 /self.clickCardCounter)* 100) + "%";
 
-        if(self.matchCounter == 9){
+        if(self.matchCounter == 10){
             for(var i = 0; i < self.imgObjArray; i++){
                 self.imgObjArray[i].hide_back = true;
             }
