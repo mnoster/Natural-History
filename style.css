@@ -113,10 +113,8 @@ p:focus{
 	background-color: #FF0066;	
 }
 img{
-	width:150px;
-	height:auto 150px;
-
-
+	width:22vmax;
+	height:22vmax;
 }
 li{
 	color:orange;
@@ -132,11 +130,15 @@ span {
 }
 .all-photos{
 	text-align: center;
-
 }
 .zoo-title{
 	color:white;
 	text-shadow: 2px 2px #ff0000;
+}
+.zoo-info{
+	color:orange;
+	font-size: 3vmax;
+
 }
 
 /*#daphnia:hover span{
