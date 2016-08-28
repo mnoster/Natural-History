@@ -61,7 +61,7 @@ p{
 	color: white;
 	height: 100px;
 	width: 100%;
-	background-color: maroon;
+	background-color: #151515;
 }
 p:focus{
 	background-color: white;
@@ -74,7 +74,7 @@ p:focus{
 	color: white;
 	height: 100px;
 	width: 100%;
-	background-color: blue;
+	background-color: #eaab00;
 }
 #p3{
 	font-family: Times;
@@ -83,7 +83,7 @@ p:focus{
 	color: white;
 	height: 100px;
 	width: 100%;
-	background-color: orange;
+	background-color: #e800ef;
 }
 #p4{
 	font-family: Times;
@@ -92,7 +92,7 @@ p:focus{
 	color: white;
 	height: 100px;
 	width: 100%;
-	background-color: purple;	
+	background-color: #1e16ff;
 }
 #p5{
 	font-family: Times;
@@ -122,12 +122,6 @@ li{
 	display:block;
 }
 
-span {
-	color:white;
-	font-size: 18px;
-	font-family:Verdana;
-	float:left;
-}
 .all-photos{
 	text-align: center;
 }
@@ -141,17 +135,10 @@ span {
 
 }
 
-/*#daphnia:hover span{
-	display: block;
+.keywords{
+	text-decoration:underline;
+	font-weight: 500;
+	color:red;
 }
-#copepod:hover span{
-	display:block;
-}
-#mlarvae:hover span{
-	display:block;
-}*/
-
-
-
 
 

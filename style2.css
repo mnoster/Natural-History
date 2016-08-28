@@ -85,9 +85,8 @@ color:green;
 li{
 	list-style-type: none;
 	color:orange;
-	padding-bottom: 8px;
+	margin: 8px;
 	display: inline;
-	padding: 3px;
 }
 .zoo-info{
 	color:white;

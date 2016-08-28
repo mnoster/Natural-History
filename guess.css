@@ -85,9 +85,9 @@ header{
 
 /*---------------------*/
 .nav{
-    font-family:"Helvetica";
-    font-size: 1.6vmax;
-    height: 4vh;
+    font-family:"Times";
+    font-size: 1.5vmax;
+    height: 5vh;
     width: 100%;
     background-color: #C8C8C8;
 }
