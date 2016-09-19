@@ -73,11 +73,26 @@ p:focus{
 	height: 100px;
 	width: 100%;
 	background-color: purple;	
-}	
-img{
-	width:14vmax;
-	height:14vmax; /* might need to be auto*/
+}
+@media only screen and (min-width: 300px) {
+	.img-list li img {
+		height: 30vh;
+		width:70vw;
+		margin-top: 5px;
+	}
+}
 
+@media only screen and (min-width: 500px) {
+	.img-list li img{
+		height: 20vh;
+		width:20vw;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.img-list li img{
+		height: 30vh;
+		width:30vh;
+	}
 }
 .color{
 color:green;

@@ -85,11 +85,18 @@ header{
 
 /*---------------------*/
 .nav{
-    font-family:"Times";
-    font-size: 1.5vmax;
+    font-family:" Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2vh;
     height: 5vh;
     width: 100%;
     background-color: #C8C8C8;
+    font-weight:400;
+}
+@media only screen and (max-width: 378px){
+    .nav{
+        font-size: 14px;
+        height: 6vh;
+    }
 }
 .nav ul{
     list-style-type: none;
