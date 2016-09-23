@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
     $('#sendToDB').on('click', function () {
         submitBirds();
-        console.log('sending to DB');
+        // console.log('sending to DB');
     });
 });
 function setFields() {
@@ -77,34 +77,36 @@ function dropdownYears() {
     }
 }
 
-// function submitBirds() {
-//         var postData = $('#birdForm').serializeArray();
-//         console.log(postData);
-//         $.ajax({
-//             url: 'bird_handler',
-//             method: 'post',
-//             data: postData,
-//             dataType: 'json',
-//             success: function (response) {
-//                 console.log(response);
-//             },
-//             error: function (response) {
-//                 console.log(response);
-//             }
-//         })
-//
-// }
-function submitBirds(){
 
-$('#birdTableInfo tr').each(function(row,tr){
-   var tableData = tableData
-       + $(tr).find('.dropdownBirds').val()+' '
-       + $(tr).find('.male').val()+' '
-       + $(tr).find('.female').val()+' '
-       + $(tr).find('.unknown').val()+' '
-       + $(tr).find('.location').val()+' '
-       + $(tr).find('.date-value').val()+' ';
+function submitBirds() {
+    var tableData = [];
+    // var tableLength =
+    $('#birdTable tr').each(function (row, tr) {
+            tableData[row] ={
+            'bird_name': $(tr).find('.dropdownBirds').val(),
+            'male': $(tr).find('.male').val(),
+            'female': $(tr).find('.female').val(),
+            'unknown':$(tr).find('.unknown').val(),
+            'location': $(tr).find('.location').val(),
+            'date':$(tr).find('.date-value').val()
+        };
+    });
+    tableData.shift();
     console.log(tableData);
-});
+    // sendToDB(tableData);
+}
+function sendToDB(tableData) {
+        $.ajax({
+            url: 'bird_handler.php',
+            method: 'post',
+            data: tableData,
+            dataType: 'json',
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        })
 
 }
