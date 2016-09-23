@@ -63,7 +63,7 @@
                 <select id="year"><option disabled selected value> -- year -- </option></select>
                 <button id="submitDate" class="btn-info btn">set date</button>
             </div>
-            <table class="table">
+            <table class="table" id="birdTable">
                 <thead>
                 <tr>
                     <th>Bird Type</th>
@@ -74,19 +74,19 @@
                     <th>Date</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="birdTableInfo">
                 <tr class="success">
                     <td><select class="dropdownBirds">
                         <option disabled selected value> -- select a bird -- </option>
 
                     </select></td>
-                    <td><select class="dropdownNumbers">
+                    <td><select lass="dropdownNumbers male">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select class="dropdownNumbers female">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select  class="dropdownNumbers unknown">
                     </select></td>
-                    <td><select>
+                    <td><select class="location">
                         <option>Neary Lagoon</option>
                         <option>Pogonip</option>
                         <option>San Lorenzo River</option>
@@ -100,13 +100,13 @@
                         <option disabled selected value> -- select a bird -- </option>
 
                     </select></td>
-                    <td><select class="dropdownNumbers">
+                    <td><select lass="dropdownNumbers male">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select class="dropdownNumbers female">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select  class="dropdownNumbers unknown">
                     </select></td>
-                    <td><select>
+                    <td><select class="location">
                         <option>Neary Lagoon</option>
                         <option>Pogonip</option>
                         <option>San Lorenzo River</option>
@@ -115,17 +115,18 @@
                     </select></td>
                     <td><input class="date-value"></td>
                 </tr>
-                <tr class="info lastRow">
+                <tr class="info">
                     <td><select class="dropdownBirds">
                         <option disabled selected value> -- select a bird -- </option>
+
                     </select></td>
-                    <td><select class="dropdownNumbers">
+                    <td><select lass="dropdownNumbers male">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select class="dropdownNumbers female">
                     </select></td>
-                    <td><select  class="dropdownNumbers">
+                    <td><select  class="dropdownNumbers unknown">
                     </select></td>
-                    <td><select>
+                    <td><select class="location">
                         <option>Neary Lagoon</option>
                         <option>Pogonip</option>
                         <option>San Lorenzo River</option>
@@ -136,9 +137,10 @@
                 </tr>
                 </tbody>
             </table>
+
             <h4>Add <select class="dropdownRows"><option>1</option><option>2</option><option>3</option></select> more rows <button class="btn btn-success btn-sm addRows">add</button></h4>
         </div>
-        <button class="btn btn-md btn-primary submitBirds form-control">Submit Data</button>
+        <button id="sendToDB" class="btn btn-md btn-primary submitBirds form-control">Submit Data</button>
     </div>
 </div>
 
