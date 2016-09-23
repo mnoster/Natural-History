@@ -99,10 +99,10 @@ function submitBirds(){
 $('#birdTableInfo tr').each(function(row,tr){
    var tableData = tableData
        + $(tr).find('.dropdownBirds').val()+' '
-       + $(tr).find('#male').val()+' '
-       + $(tr).find('#female').val()+' '
-       + $(tr).find('#unknown').val()+' '
-       + $(tr).find('#location').val()+' '
+       + $(tr).find('.male').val()+' '
+       + $(tr).find('.female').val()+' '
+       + $(tr).find('.unknown').val()+' '
+       + $(tr).find('.location').val()+' '
        + $(tr).find('.date-value').val()+' ';
     console.log(tableData);
 });
