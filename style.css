@@ -174,4 +174,11 @@ li{
 #date-input{
 	float:right;
 }
-
+#login{
+	float: right;
+	margin: -4px 20px 0 0;
+}
+.submitBirds{
+	float:right;
+	margin-top: 10px;
+}
