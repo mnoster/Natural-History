@@ -35,7 +35,7 @@ function setFields() {
 }
 function setAllDates() {
     $('#submitDate').on('mouseup', function () {
-        var date = $('#month').val() + " " + $('#day').val() + " " + $('#year').val();
+        var date = $('#month').val() + " " + $('#day').val() + " " + $('.year').val();
         $('.date-value').val(date);
     });
 }
@@ -76,7 +76,7 @@ function dropdownMonths() {
 }
 function dropdownYears() {
     for (var i = 0; i < year.length; i++) {
-        $('#year').append("<option>" + year[i] + "</option>")
+        $('.year').append("<option>" + year[i] + "</option>")
     }
 }
 

@@ -7,9 +7,9 @@
     <meta name="keywords" content="Birds, Neary Lagoon, Santa Cruz, Wetland Walk">
     <link rel="shortcut icon" href="Images/ElectronicRU-Bird-Picture-300px.png"/>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
@@ -60,27 +60,41 @@
         </div>
     </div>
 </header>
-<div class="container">
+<div class="container fluid">
     <div class="row">
-        <select class="dropdownBirds">
-            <option disabled selected value> -- select a bird --</option>
-        </select>
-        <select class="location">
-            <option>Neary Lagoon</option>
-            <option>Pogonip</option>
-            <option>San Lorenzo River</option>
-            <option>West Cliff</option>
-            <option>UCSC</option>
-        </select>
-        <select id="month"><option disabled selected value> -- month -- </option>
-        </select>
-        <select id="year"><option disabled selected value> -- start year -- </option></select>
-        <select id="year"><option disabled selected value> -- end year -- </option></select>
-
-        <button class="btn btn-info" id="populateGraph">submit</button>
-    </div>
-    <div class="row">
-        <div id="graphArea" style="height: 55vh;"></div>
+        <div class="col-xs-12 col-sm-3">
+            <select class="dropdownBirds first form-control  form-group">
+                <option disabled selected value> -- select bird 1 --</option>
+            </select>
+            <select class="dropdownBirds second  form-control  form-group">
+                <option disabled selected value> -- select bird 2 --</option>
+            </select>
+            <select class="dropdownBirds third  form-control form-group">
+                <option disabled selected value> -- select bird 3 --</option>
+            </select>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+            <select class="location form-control form-group">
+                <option>Neary Lagoon</option>
+                <option>Pogonip</option>
+                <option>San Lorenzo River</option>
+                <option>West Cliff</option>
+                <option>UCSC</option>
+            </select>
+            <select id="month" class="form-control form-group">
+                <option disabled selected value> -- month --</option>
+            </select>
+            <select class="start-year year form-control form-group">
+                <option disabled selected value> -- start year --</option>
+            </select>
+            <select class="end-year year form-control form-group">
+                <option disabled selected value> -- end year --</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" id="populateGraph">submit</button>
+        <div class="col-xs-12">
+            <div id="graphArea" style="height: 55vh;width:100%"></div>
+        </div>
     </div>
 </div>
 </body>
