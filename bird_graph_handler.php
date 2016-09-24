@@ -4,15 +4,34 @@ include('mysql_connect.php');
 $data = $_POST; // data to store all post data from ajax
 //print_r($_POST,true);
 $output = [];//array for all output data
-$bird1 = $_POST['bird1'];
-$startYear = $_POST['start_year'];
-
-$query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' year='$startYear'";
-$bird1 = [];
-$result = mysqli_query($conn,$query);
-
+$bird1 =addslashes( $_POST['bird1']);
+$startYear =addslashes( $_POST['start_year']);
+$month = addslashes($_POST['month']);
+if(empty($bird1)){
+    $bird1['message'][] = "Select bird name";
+    print json_encode($bird1);
+    exit();
+}
+else if(!empty($bird1) && !empty($startYear) && !empty($month)){
+    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year='$startYear' AND month='$month'";
+    $result = mysqli_query($conn,$query);
+}
+else if(empty($month)){
+    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year='$startYear'";
+    $result = mysqli_query($conn,$query);
+}
+else if(empty($startYear)){
+    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1'  AND month='$month'";
+    $result = mysqli_query($conn,$query);
+}
+else{
+    $bird1['message'][] = "Fields empty";
+    print json_encode($bird1);
+    exit();
+}
 $rows_affected = mysqli_affected_rows($conn);
-print($rows_affected);
+$bird1 = [];
+
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -37,27 +56,5 @@ if($rows_affected > 0){
     $output = json_encode($output);
     print($output);
 }
-
-//$output['bird1'][] = $bird1;
-//$bird2 = $_POST['bird2'];
-//$output['bird2'][] = $bird2;
-//$bird3 = $_POST['bird3'];
-//$output['bird3'][] = $bird3;
-//$male = $_POST['male'];
-//$output['male'][] = $male;
-//$female = $_POST['female'];
-//$output['female'][] = $female;
-//$unknown = $_POST['unknown'];
-//$output['unknown'][] = $unknown;
-//$location = $_POST['location'];
-//$output['location'][] = $location;
-//$month = $_POST['month'];
-//$output['month'][] = $month;
-//$output['startYear'][] = $startYear;
-//$endYear = $_POST['end_year'];
-//$output['endYear'][]= $endYear;
-
-//$output = json_encode($output);
-//print($output)
 
 ?>
