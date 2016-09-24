@@ -51,13 +51,13 @@ function addMoreRows() {
     var numAddedRows = $('.dropdownRows').val();
     for (var i = 0; i < numAddedRows; i++) {
         if (i == 0) {
-            $('.table').append("<tr class='success'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select> <option>Neary Lagoon</option> <option>Pogonip</option> <option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td> <td><input class='date-value'></td> </tr>");
+            $('.table').append("<tr class='success'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers male'> </select></td> <td><select class='dropdownNumbers female'> </select></td> <td><select  class='dropdownNumbers unknown'> </select></td> <td><select class='location'> <option>Neary Lagoon</option><option>Pogonip</option><option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td><td><input class='date-value'></td></tr>");
         }
         else if (i == 1) {
-            $('.table').append("<tr class='danger'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select> <option>Neary Lagoon</option> <option>Pogonip</option> <option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td> <td><input class='date-value'></td> </tr>");
+            $('.table').append("<tr class='danger'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers male'> </select></td> <td><select class='dropdownNumbers female'> </select></td> <td><select  class='dropdownNumbers unknown'> </select></td> <td><select class='location'> <option>Neary Lagoon</option><option>Pogonip</option><option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td><td><input class='date-value'></td></tr>");
         }
         else {
-            $('.table').append("<tr class='info'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select  class='dropdownNumbers'> </select></td> <td><select> <option>Neary Lagoon</option> <option>Pogonip</option> <option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td> <td><input class='date-value'></td> </tr>");
+            $('.table').append("<tr class='info'> <td><select class='dropdownBirds'> <option disabled selected value> -- select a bird -- </option> </select></td> <td><select class='dropdownNumbers male'> </select></td> <td><select class='dropdownNumbers female'> </select></td> <td><select  class='dropdownNumbers unknown'> </select></td> <td><select class='location'> <option>Neary Lagoon</option><option>Pogonip</option><option>San Lorenzo River</option> <option>West Cliff</option> <option>UCSC</option> </select></td><td><input class='date-value'></td></tr>");
         }
     }
 }
@@ -77,7 +77,6 @@ function dropdownYears() {
     }
 }
 
-
 function submitBirds() {
     var tableData = [];
     // var tableLength =
@@ -92,14 +91,17 @@ function submitBirds() {
         };
     });
     tableData.shift();
-    console.log(tableData);
-    // sendToDB(tableData);
+    // tableData = $.toJSON(tableData);
+    // console.log(tableData);
+    sendToDB(tableData);
 }
 function sendToDB(tableData) {
         $.ajax({
             url: 'bird_handler.php',
             method: 'post',
-            data: tableData,
+            data:{
+                tableData: tableData
+            },
             dataType: 'json',
             success: function (response) {
                 console.log(response);
