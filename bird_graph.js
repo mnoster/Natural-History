@@ -8,6 +8,7 @@ function getDataForGraph() {
     var bird2 = $('.second').val();
     var bird3 = $('.third').val();
     var start_year = $('.start-year').val();
+    console.log("start year: ", start_year );
     var end_year = $('.end-year').val();
     var month = $('#month').val();
     var location = $('.location').val();

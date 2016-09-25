@@ -5,37 +5,36 @@ if($conn->connect_error){
     print(json_encode($output));
     die();
 }
-
 $data = $_POST; // data to store all post data from ajax
 $output = [];//array for all output data
 $bird1 =addslashes( $_POST['bird1']);
 $startYear =addslashes( $_POST['start_year']);
 $endYear =addslashes( $_POST['end_year']);
-
+//print("end year: " . $endYear);
 $month = addslashes($_POST['month']);
 if(empty($bird1)){
     $bird1['message'][] = "Select bird name";
     print json_encode($bird1);
     exit();
 }
-//all field fill
-else if(!empty($bird1) && !empty($startYear) && !empty($month) && !empty($startYear)){
+//all field fill WORKS
+else if(!empty($bird1) && !empty($startYear) && !empty($month) && !empty($endYear)){
     $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND month='$month' AND year BETWEEN '$startYear' AND '$endYear'";
     $result = mysqli_query($conn,$query);
 }
-//just month empty
-else if(!empty($bird1) && !empty($startYear) && !empty($startYear) && empty($month)){
+//just month empty WORKS
+else if(!empty($bird1) && !empty($startYear) && !empty($endYear) && empty($month)){
     $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year BETWEEN '$startYear' AND '$endYear'";
     $result = mysqli_query($conn,$query);
 }
-//both years empty
+//both years empty WORKS
 else if(!empty($bird1) && empty($startYear) && empty($endYear) && !empty($month)){
     $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND month='$month'";
     $result = mysqli_query($conn,$query);
 }
 //only end year empty
-else if(!empty($bird1) && !empty($startYear) && !empty($month) && empty($endYear)){
-    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year='$startYear' AND month='$month'";
+else if(!empty($bird1) && !empty($startYear) && !empty($month)){
+    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND month='$month' AND year='$startYear'";
     $result = mysqli_query($conn,$query);
 }
 //end year and month empty
@@ -43,7 +42,11 @@ else if(!empty($bird1) && !empty($startYear) && empty($month) && empty($endYear)
     $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year='$startYear'";
     $result = mysqli_query($conn,$query);
 }
-
+//only year and bird
+else if(!empty($bird1) && !empty($startYear)){
+    $query = "SELECT male, female, unknown_gender, bird_name, month, year FROM birds WHERE bird_name ='$bird1' AND year='$startYear'";
+    $result = mysqli_query($conn,$query);
+}
 else{
     $bird1 = [];
     $bird1['message'][] = "Fields empty";
@@ -62,7 +65,6 @@ if ($result->num_rows > 0) {
         $bird1['unknown_gender']=$row['unknown_gender'];
         $bird1['year'][]=$row['year'];
         $bird1['month'][]=$row['month'];
-
     }
 } else {
     echo "0 results";

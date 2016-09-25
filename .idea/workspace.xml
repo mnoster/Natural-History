@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d4270a4-b480-4acf-afb0-d7ec08e458dd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_graph.js" afterPath="$PROJECT_DIR$/bird_graph.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_graph_handler.php" afterPath="$PROJECT_DIR$/bird_graph_handler.php" />
     </list>
     <ignored path="Natural-History.iws" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="bird_graph.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+            <state relative-caret-position="1260">
+              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,8 +42,8 @@
       <file leaf-file-name="bird_graph.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -50,15 +52,16 @@
       <file leaf-file-name="bird_graph_handler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bird_graph_handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+            <state relative-caret-position="675">
+              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding>
-                <marker date="1474739783000" expanded="true" signature="649:809" placeholder="SELECT male,... " />
-                <marker date="1474739783000" expanded="true" signature="975:1116" placeholder="SELECT male,... " />
-                <marker date="1474739783000" expanded="true" signature="1279:1376" placeholder="SELECT male,... " />
-                <marker date="1474739783000" expanded="true" signature="1279:1394" placeholder="SELECT male,... " />
-                <marker date="1474739783000" expanded="true" signature="1561:1698" placeholder="SELECT male,... " />
-                <marker date="1474739783000" expanded="true" signature="1869:1987" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="685:845" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="1015:1156" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="1325:1422" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="1325:1440" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="1588:1725" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="1896:2014" placeholder="SELECT male,... " />
+                <marker date="1474818851000" expanded="true" signature="2143:2261" placeholder="SELECT male,... " />
               </folding>
             </state>
           </provider>
@@ -244,25 +247,25 @@
       <option name="presentableId" value="Default" />
       <updated>1474668569867</updated>
       <workItem from="1474668571448" duration="3349000" />
-      <workItem from="1474684515781" duration="23929000" />
+      <workItem from="1474684515781" duration="27713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27278000" />
+    <option name="totallyTimeSpent" value="31062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109589" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -409,10 +412,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bird_graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bird_graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -420,25 +431,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bird_graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bird_graph_handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        <state relative-caret-position="675">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
           <folding>
-            <marker date="1474739783000" expanded="true" signature="649:809" placeholder="SELECT male,... " />
-            <marker date="1474739783000" expanded="true" signature="975:1116" placeholder="SELECT male,... " />
-            <marker date="1474739783000" expanded="true" signature="1279:1376" placeholder="SELECT male,... " />
-            <marker date="1474739783000" expanded="true" signature="1279:1394" placeholder="SELECT male,... " />
-            <marker date="1474739783000" expanded="true" signature="1561:1698" placeholder="SELECT male,... " />
-            <marker date="1474739783000" expanded="true" signature="1869:1987" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="685:845" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="1015:1156" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="1325:1422" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="1325:1440" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="1588:1725" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="1896:2014" placeholder="SELECT male,... " />
+            <marker date="1474818851000" expanded="true" signature="2143:2261" placeholder="SELECT male,... " />
           </folding>
         </state>
       </provider>
