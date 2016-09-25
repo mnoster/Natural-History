@@ -64,14 +64,14 @@
     <div class="row">
         <div class="col-xs-12 col-sm-3">
             <select class="dropdownBirds first form-control  form-group">
-                <option disabled selected value> -- select bird 1 --</option>
+                <option disabled selected value> -- select bird --</option>
             </select>
-            <select class="dropdownBirds second  form-control  form-group">
-                <option disabled selected value> -- select bird 2 --</option>
-            </select>
-            <select class="dropdownBirds third  form-control form-group">
-                <option disabled selected value> -- select bird 3 --</option>
-            </select>
+            <!--<select class="dropdownBirds second  form-control  form-group">-->
+            <!--<option disabled selected value> &#45;&#45; select bird 2 &#45;&#45;</option>-->
+            <!--</select>-->
+            <!--<select class="dropdownBirds third  form-control form-group">-->
+            <!--<option disabled selected value> &#45;&#45; select bird 3 &#45;&#45;</option>-->
+            <!--</select>-->
         </div>
         <div class="col-xs-12 col-sm-5">
             <select class="location form-control form-group">
@@ -91,7 +91,10 @@
                 <option disabled selected value> -- end year --</option>
             </select>
         </div>
-        <button class="btn btn-primary" id="populateGraph">Generate Graph</button>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <button class="btn btn-primary" id="populateGraph">Generate Graph</button>
+            <button class="btn btn-warning" id="resetGraph">Reset</button>
+        </div>
         <div class="col-xs-12">
             <div id="graphArea" style="height: 55vh;width:100%"></div>
         </div>

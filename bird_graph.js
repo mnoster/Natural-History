@@ -1,6 +1,14 @@
 $(document).ready(function () {
-    $('#populateGraph').on('mouseup', function () {
+    $('#populateGraph').on('click', function () {
         getDataForGraph();
+    });
+    $('#resetGraph').on('click', function () {
+        $('.first').val('');
+        $('.location').val('Neary Lagoon');
+        $('.end-year').val('');
+        $('#month').val('');
+        $('.start-year').val('');
+        $('#graphArea').html('');
     });
 });
 function getDataForGraph() {
@@ -11,6 +19,44 @@ function getDataForGraph() {
     var end_year = $('.end-year').val();
     var month = $('#month').val();
     var location = $('.location').val();
+    switch(month){
+        case 'January':
+            month = "01";
+            break;
+        case 'February':
+            month = "02";
+            break;
+        case 'March':
+            month = "03";
+            break;
+        case 'April':
+            month="04";
+            break;
+        case 'May':
+            month = "05";
+            break;
+        case "June":
+            month="06";
+            break;
+        case "July":
+            month="07";
+            break;
+        case "August":
+            month="08";
+            break;
+        case "September":
+            month = "09";
+            break;
+        case "October":
+            month="10";
+            break;
+        case "November":
+            month = "11";
+            break;
+        case "December":
+            month="12";
+            break;
+    }
     $.ajax({
         url: 'bird_graph_handler.php',
         method: 'post',
@@ -35,37 +81,29 @@ function getDataForGraph() {
                         year: response.year[i],
                         name: response.bird_name[i],
                         male: response.male[i],
-                        month: response.month[i],
+                        monthName: response.month[i],
+                        month:response.year[i]+"-"+response.month[i],
                         female: response.female[i],
                         total: response.total[i]
                     });
 
                 }
                 console.log('data: ', data);
-                var newDAta = [];
-                // for(var i= 0;i<data.length;i++){
-                //     if(i == data.length-1){
-                //         newDAta += data[i]
-                //     }else{
-                //         newDAta += data[i] + ','
-                //     }
-                // }
-                console.log('newdata: ', newDAta);
                 switch (responseCase[0]) {
-                    case 'all friends':
+                    case 'all fields':
                         initGraph(data, year);
                         break;
                     case 'no month':
                         initGraph(data, year);
                         break;
                     case 'no end year':
-                        initGraph(data, year);
-                        break;
-                    case 'only month':
                         initGraph(data, month);
                         break;
-                    case 'only start year':
+                    case 'only month':
                         initGraph(data, year);
+                        break;
+                    case 'only start year':
+                        initGraph(data, month);
                         break;
                     default:
                         console.log('nothing is switch triggered');
@@ -79,7 +117,7 @@ function getDataForGraph() {
     });
 }
 function initGraph(data, xCoordinate) {
-    // console.log('data: ', data);
+    $('#graphArea').html('');
     Morris.Area({
         element: 'graphArea',
         data: data,
@@ -88,7 +126,7 @@ function initGraph(data, xCoordinate) {
         labels: ['male', 'female', 'total'],
         pointSize: 2,
         hideHover: 'auto',
-        smooth:false,
+        // smooth:false,
         behaveLikeLine:true,
         lineColors:["red","blue","green"],
         pointFillColors:["red","blue","black"],

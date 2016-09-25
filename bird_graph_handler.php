@@ -66,8 +66,8 @@ else{
     print json_encode($bird1);
     exit();
 }
-
 $rows_affected = mysqli_affected_rows($conn);
+
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -80,8 +80,6 @@ if ($result->num_rows > 0) {
         $bird1['month'][]=$row['month'];
         $bird1['total'][]=$row['total'];
     }
-} else {
-    echo "0 results";
 }
 if($rows_affected > 0){
     $bird1['message'][]='success';

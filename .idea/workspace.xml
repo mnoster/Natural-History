@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7d4270a4-b480-4acf-afb0-d7ec08e458dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_chart.js" afterPath="$PROJECT_DIR$/bird_chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_graph.html" afterPath="$PROJECT_DIR$/bird_graph.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_graph.js" afterPath="$PROJECT_DIR$/bird_graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_handler.php" afterPath="$PROJECT_DIR$/bird_handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bird_graph_handler.php" afterPath="$PROJECT_DIR$/bird_graph_handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="Natural-History.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,21 +32,43 @@
       <file leaf-file-name="bird_graph.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+            <state relative-caret-position="232">
+              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bird_graph.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bird_chart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bird_chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1274">
+              <caret line="8" column="132" selection-start-line="8" selection-start-column="132" selection-end-line="8" selection-end-column="132" />
+              <folding>
+                <marker date="1474844371000" expanded="true" signature="9567:9578" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bird_graph.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -52,15 +77,15 @@
       <file leaf-file-name="bird_graph_handler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_graph_handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
               <folding>
-                <marker date="1474838495000" expanded="true" signature="882:1084" placeholder="SELECT male,... " />
-                <marker date="1474838495000" expanded="true" signature="1308:1493" placeholder="SELECT male,... " />
-                <marker date="1474838495000" expanded="true" signature="1714:1856" placeholder="SELECT male,... " />
-                <marker date="1474838495000" expanded="true" signature="1714:1874" placeholder="SELECT male,... " />
-                <marker date="1474838495000" expanded="true" signature="2076:2258" placeholder="SELECT male,... " />
-                <marker date="1474838495000" expanded="true" signature="2484:2647" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="882:1084" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="1308:1493" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="1714:1856" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="1714:1874" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="2076:2258" placeholder="SELECT male,... " />
+                <marker date="1474846724000" expanded="true" signature="2484:2647" placeholder="SELECT male,... " />
               </folding>
             </state>
           </provider>
@@ -69,7 +94,7 @@
       <file leaf-file-name="bird_handler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bird_handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="510">
               <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
               <folding>
                 <marker date="1474840790000" expanded="true" signature="1269:1472" placeholder="INSERT INTO birds... " />
@@ -100,11 +125,12 @@
         <option value="$PROJECT_DIR$/bird_chart.php" />
         <option value="$PROJECT_DIR$/bird_chart.html" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/bird_chart.js" />
-        <option value="$PROJECT_DIR$/bird_graph.html" />
-        <option value="$PROJECT_DIR$/bird_graph_handler.php" />
         <option value="$PROJECT_DIR$/bird_handler.php" />
+        <option value="$PROJECT_DIR$/bird_chart.js" />
+        <option value="$PROJECT_DIR$/bird_graph_handler.php" />
+        <option value="$PROJECT_DIR$/bird_graph.html" />
         <option value="$PROJECT_DIR$/bird_graph.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -222,12 +248,12 @@
       <option name="presentableId" value="Default" />
       <updated>1474668569867</updated>
       <workItem from="1474668571448" duration="3349000" />
-      <workItem from="1474684515781" duration="38195000" />
+      <workItem from="1474684515781" duration="41646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41544000" />
+    <option name="totallyTimeSpent" value="44995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -274,7 +300,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1474822045000" expanded="true" signature="9529:9540" placeholder="..." />
+            <marker date="1474844371000" expanded="true" signature="9567:9578" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -369,16 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bird_chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="124" column="40" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
-          <folding>
-            <marker date="1474822045000" expanded="true" signature="9529:9540" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bird_chart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-525">
@@ -387,20 +403,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bird_graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bird_handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="510">
           <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding>
             <marker date="1474840790000" expanded="true" signature="1269:1472" placeholder="INSERT INTO birds... " />
@@ -408,25 +413,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bird_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1274">
+          <caret line="8" column="132" selection-start-line="8" selection-start-column="132" selection-end-line="8" selection-end-column="132" />
+          <folding>
+            <marker date="1474844371000" expanded="true" signature="9567:9578" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bird_graph_handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="322">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
           <folding>
-            <marker date="1474838495000" expanded="true" signature="882:1084" placeholder="SELECT male,... " />
-            <marker date="1474838495000" expanded="true" signature="1308:1493" placeholder="SELECT male,... " />
-            <marker date="1474838495000" expanded="true" signature="1714:1856" placeholder="SELECT male,... " />
-            <marker date="1474838495000" expanded="true" signature="1714:1874" placeholder="SELECT male,... " />
-            <marker date="1474838495000" expanded="true" signature="2076:2258" placeholder="SELECT male,... " />
-            <marker date="1474838495000" expanded="true" signature="2484:2647" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="882:1084" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="1308:1493" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="1714:1856" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="1714:1874" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="2076:2258" placeholder="SELECT male,... " />
+            <marker date="1474846724000" expanded="true" signature="2484:2647" placeholder="SELECT male,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bird_graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bird_graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
           <folding />
         </state>
       </provider>
