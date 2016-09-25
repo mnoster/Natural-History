@@ -32,7 +32,7 @@ for ($i = 0; $i < $dataLength; $i++) {
         $output['day'][] = $day;
         $year = addslashes($splitDate[2]);
         $output['year'][] = $year;
-        $total = $male . $female . $unknown;
+        $total = $male + $female + $unknown;
         $output['total'][] = $total;
         $query = "INSERT INTO birds (bird_name, male, female, unknown_gender, location, full_date, year, month, day,total) VALUES ('$name','$male','$female','$unknown','$location','$date','$year','$month','$day','$total')";
         mysqli_query($conn,$query);
