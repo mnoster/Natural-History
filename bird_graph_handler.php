@@ -10,6 +10,7 @@ $output = [];//array for all output data
 $bird1 =addslashes( $_POST['bird1']);
 $startYear =addslashes( $_POST['start_year']);
 $endYear =addslashes( $_POST['end_year']);
+$location = addslashes($_POST['location']);
 //print("end year: " . $endYear);
 $month = addslashes($_POST['month']);
 if(empty($bird1)){
