@@ -99,7 +99,9 @@ function submitBirds() {
     sendToDB(tableData);
 }
 function sendToDB(tableData) {
-        $.ajax({
+    $('#sendToDB').attr('disabled',true);
+    $('body').addClass('waiting');
+    $.ajax({
             url: 'bird_handler.php',
             method: 'post',
             data:{
@@ -108,6 +110,17 @@ function sendToDB(tableData) {
             dataType: 'json',
             success: function (response) {
                 console.log(response);
+                if(response.message=='success'){
+                    $('#sendToDB').removeAttr('disabled');
+                    $('#sendToDB').append('<h3 style="color:black">successfully submitted</h3>');
+                    $('body').removeClass('waiting');
+                    $('.dropdownBirds').val('');
+                    $('.male').val('0');
+                    $('.female').val('0');
+                    $('.unknown').val('0');
+                    $('.location').val('Neary Lagoon');
+                    $('.date-value').val('');
+                }
             },
             error: function (response) {
                 console.log(response);

@@ -32,11 +32,18 @@ for ($i = 0; $i < $dataLength; $i++) {
         $output['day'][] = $day;
         $year = addslashes($splitDate[2]);
         $output['year'][] = $year;
-        $query = "INSERT INTO birds (bird_name, male, female, unknown_gender, location, full_date, year, month, day) VALUES ('$name','$male','$female','$unknown','$location','$date','$year','$month','$day')";
+        $total = $male . $female . $unknown;
+        $output['total'][] = $total;
+        $query = "INSERT INTO birds (bird_name, male, female, unknown_gender, location, full_date, year, month, day,total) VALUES ('$name','$male','$female','$unknown','$location','$date','$year','$month','$day','$total')";
         mysqli_query($conn,$query);
     }
 };
-$output = json_encode($output);
-print($output)
+
+$rows_affected = mysqli_affected_rows($conn);
+if($rows_affected > 0){
+    $output['message'][] = "success";
+    print json_encode($output);
+}
+
 
 ?>

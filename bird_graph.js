@@ -27,6 +27,18 @@ function getDataForGraph() {
         dataType: 'json',
         success: function (response) {
             console.log(response);
+            var data = null;
+            if(!response.month){
+                for(var i =0;i <response.bird_name;i++){
+                    data[i]= {name:response.bird_name[i],male:response.male[i],female:response.female[i],total:response.total[i]}
+                }
+            }
+            else if(!response.start_year){
+                for(var i =0;i <response.bird_name;i++){
+                    data[i]= {name:response.bird_name[i],male:response.male[i],female:response.female[i],total:response.total[i]}
+                }
+            }
+
             // initGraph(response);
         },
         error: function (response) {
@@ -35,7 +47,7 @@ function getDataForGraph() {
     })
 
 }
-function initGraph(data){
+function initGraph(data,xCoord,yCoord){
     Morris.Area({
         element: 'graphArea',
         data: [
@@ -52,7 +64,7 @@ function initGraph(data){
         ],
         xkey: 'name',
         ykeys: ['male', 'female', 'total'],
-        labels: ['male', 'female', 'total'],
+        labels: ['name','male', 'female', 'total'],
         pointSize: 2,
         hideHover: 'auto'
     });
