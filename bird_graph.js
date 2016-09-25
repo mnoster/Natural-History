@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $('#populateGraph').on('mouseup',function(){
-       getDataForGraph(); 
+$(document).ready(function () {
+    $('#populateGraph').on('mouseup', function () {
+        getDataForGraph();
     });
 });
 function getDataForGraph() {
@@ -8,18 +8,18 @@ function getDataForGraph() {
     var bird2 = $('.second').val();
     var bird3 = $('.third').val();
     var start_year = $('.start-year').val();
-    console.log("start year: ", start_year );
+    console.log("start year: ", start_year);
     var end_year = $('.end-year').val();
     var month = $('#month').val();
     var location = $('.location').val();
     $.ajax({
         url: 'bird_graph_handler.php',
         method: 'post',
-        data:{
+        data: {
             bird1: bird1,
             bird2: bird2,
             bird3: bird3,
-            start_year:start_year,
+            start_year: start_year,
             end_year: end_year,
             month: month,
             location: location
@@ -28,43 +28,52 @@ function getDataForGraph() {
         success: function (response) {
             console.log(response);
             var data = null;
-            if(!response.month){
-                for(var i =0;i <response.bird_name;i++){
-                    data[i]= {name:response.bird_name[i],male:response.male[i],female:response.female[i],total:response.total[i]}
+            var year = 'year';
+            var month = 'month';
+            console.log("bird case: " ,response.case );
+            if (response.message == 'success') {
+                for (var i = 0; i < response.bird_name.length; i++) {
+                    data = data + {
+                            year: response.year[i],
+                            name: response.bird_name[i],
+                            male: response.male[i],
+                            female: response.female[i],
+                            total: response.total[i]
+                        } + ','
+                }
+                switch (response.case) {
+                    case 'all friends':
+                        initGraph(data, year);
+                        break;
+                    case 'no month':
+                        initGraph(data, year);
+                        break;
+                    case 'no end year':
+                        initGraph(data, year);
+                        break;
+                    case 'only month':
+                        initGraph(data, month);
+                        break;
+                    case 'only start year':
+                        initGraph(data, year);
+                        break;
+                    default:
+                        console.log('nothing is switch triggered');
                 }
             }
-            else if(!response.start_year){
-                for(var i =0;i <response.bird_name;i++){
-                    data[i]= {name:response.bird_name[i],male:response.male[i],female:response.female[i],total:response.total[i]}
-                }
-            }
-
-            // initGraph(response);
         },
         error: function (response) {
             console.log(response);
         }
-    })
-
+    });
 }
-function initGraph(data,xCoord,yCoord){
+function initGraph(data, xCoordinate) {
     Morris.Area({
         element: 'graphArea',
-        data: [
-            {name: '2010 Q1', male: 2, female: null, total: 2},
-            {name: '2010 Q2', male: 2, female: 2, total: 24},
-            {name: '2010 Q3', male: 4, female: 1, total: 25},
-            {name: '2010 Q4', male: 3, female: 3, total: 5},
-            {name: '2011 Q1', male: 6, female: 19, total: 2},
-            {name: '2011 Q2', male: 5, female: 4, total: 1},
-            {name: '2011 Q3', male: 4, female: 3, total: 15},
-            {name: '2011 Q4', male: 1, female: 9, total: 5},
-            {name: '2012 Q1', male: 1, female: 4, total: 20},
-            {name: '2012 Q2', male: 8, female: 7, total: 17}
-        ],
-        xkey: 'name',
+        data: [data],
+        xkey: xCoordinate,
         ykeys: ['male', 'female', 'total'],
-        labels: ['name','male', 'female', 'total'],
+        labels: ['name', 'male', 'female', 'total'],
         pointSize: 2,
         hideHover: 'auto'
     });
