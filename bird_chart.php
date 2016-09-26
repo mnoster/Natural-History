@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(empty($_SESSION)){
+    header('Location: '. "bird_graph.html");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,34 +27,14 @@
         <ul id='navlist'>
             <li><a id="home" href="index.html">Home</a></li>
             <li><a id="museum" href="http://www.santacruzmuseum.org/">Santa Cruz Natural History Museum</a></li>
-            <li><button id ="login" type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">login</button></li>
         </ul>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">login</h4>
-            </div>
-            <div class="modal-body">
-                <input class="form-group form-control" placeholder="username">
-                <input class="form-group form-control" placeholder="password">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Submit</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
     </div>
 </div>
 <header class="header">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 style="color:black">Santa Cruz Bird Chart</h1>
+                <h1 style="color:black">Santa Cruz Bird Chart </h1>
             </div>
         </div>
     </div>

@@ -18,12 +18,12 @@
     <script src="bird_chart.js"></script>
     <title>Bird Graph</title>
 </head>
-<body>
+<body  style="background-color: #fbf9ff">
 <div class="nav">
     <div>
         <ul id='navlist'>
             <li><a id="home" href="index.html">Home</a></li>
-            <li><a id="museum" href="http://www.santacruzmuseum.org/">Santa Cruz Natural History Museum</a></li>
+            <li><a id="museum" href="http://www.santacruzmuseum.org/">SC Natural History Museum</a></li>
             <li>
                 <button id="login" type="button" class="btn btn-default btn-md" data-toggle="modal"
                         data-target="#myModal">login
@@ -41,11 +41,27 @@
                 <h4 class="modal-title">login</h4>
             </div>
             <div class="modal-body">
-                <input class="form-group form-control" placeholder="username">
-                <input class="form-group form-control" placeholder="password">
+                <input id="username" class="form-group form-control" placeholder="username">
+                <input id="password" class="form-group form-control" type="password" placeholder="password">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Submit</button>
+                <button id="login-button" type="button" class="btn btn-info" data-dismiss="modal">Submit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="infoModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">info</h4>
+            </div>
+            <div class="modal-body">
+                <h4>This site is still in its early phase so there may not be data for every bird, date, and location. If you have spotted a bird not in the list let us know!</h4>
+                <h4>To inquire about your own account to input bird data contact Nicholas at <a>njporter10@gmail.com </a> </h4>
+            </div>
+            <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -55,45 +71,59 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 style="color:black">Santa Cruz Birds</h1>
+                <h1 style="color:black">Santa Cruz Birds   <img style="height:15vh" src="Images/molumen_Wood_Ibis_2.png"></h1>
             </div>
         </div>
+        <!--<p id="p1"></p>-->
     </div>
 </header>
-<div class="container fluid">
-    <div class="row">
+<div class="container contain-graph">
+    <div class="row graph-inputs">
+        <h5 class="required"> * required fields </h5>
+        <h5 class="optional"> * at least one </h5>
+        <h5 class="more-info"><a data-toggle="modal" data-target="#infoModal">More Info</a></h5>
         <div class="col-xs-12 col-sm-3">
+            <h4>Bird Name: <span class="required">*</span> </h4>
             <select class="dropdownBirds first form-control  form-group">
-                <option disabled selected value> -- select bird 1 --</option>
+                <option disabled selected value> -- select bird --</option>
             </select>
-            <select class="dropdownBirds second  form-control  form-group">
-                <option disabled selected value> -- select bird 2 --</option>
-            </select>
-            <select class="dropdownBirds third  form-control form-group">
-                <option disabled selected value> -- select bird 3 --</option>
-            </select>
-        </div>
-        <div class="col-xs-12 col-sm-5">
+            <!--<select class="dropdownBirds second  form-control  form-group">-->
+            <!--<option disabled selected value> &#45;&#45; select bird 2 &#45;&#45;</option>-->
+            <!--</select>-->
+            <!--<select class="dropdownBirds third  form-control form-group">-->
+            <!--<option disabled selected value> &#45;&#45; select bird 3 &#45;&#45;</option>-->
+            <!--</select>-->
+            <h4>Location: <span class="required">*</span> </h4>
             <select class="location form-control form-group">
+                <option disabled selected value> -- location --</option>
                 <option>Neary Lagoon</option>
                 <option>Pogonip</option>
                 <option>San Lorenzo River</option>
                 <option>West Cliff</option>
                 <option>UCSC</option>
             </select>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+
+            <h4>Month: <span class="optional">*</span></h4>
             <select id="month" class="form-control form-group">
                 <option disabled selected value> -- month --</option>
             </select>
+            <h4>Start Year: <span class="optional">*</span></h4>
             <select class="start-year year form-control form-group">
                 <option disabled selected value> -- start year --</option>
             </select>
+            <h4>End year: </h4>
             <select class="end-year year form-control form-group">
                 <option disabled selected value> -- end year --</option>
             </select>
         </div>
-        <button class="btn btn-primary" id="populateGraph">submit</button>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <button class="btn btn-primary" id="populateGraph">Generate Graph</button>
+            <button class="btn btn-warning" id="resetGraph">Reset</button>
+        </div>
         <div class="col-xs-12">
-            <div id="graphArea" style="height: 55vh;width:100%"></div>
+            <div id="graphArea"><h2 class="bird-title"></h2></div>
         </div>
     </div>
 </div>
