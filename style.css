@@ -185,3 +185,16 @@ li{
 .waiting{
 	cursor:progress
 }
+.graph-inputs{
+	padding:30px 10px 10px 10px;
+	box-shadow: 0px 1px 1px 1px black;
+}
+.required{
+	color: red;
+}
+.optional{
+	color: blue;
+}
+.contain-graph{
+	background-color: white;
+}

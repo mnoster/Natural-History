@@ -18,12 +18,12 @@
     <script src="bird_chart.js"></script>
     <title>Bird Graph</title>
 </head>
-<body>
+<body  style="background-color: #fbf9ff">
 <div class="nav">
     <div>
         <ul id='navlist'>
             <li><a id="home" href="index.html">Home</a></li>
-            <li><a id="museum" href="http://www.santacruzmuseum.org/">Santa Cruz Natural History Museum</a></li>
+            <li><a id="museum" href="http://www.santacruzmuseum.org/">SC Natural History Museum</a></li>
             <li>
                 <button id="login" type="button" class="btn btn-default btn-md" data-toggle="modal"
                         data-target="#myModal">login
@@ -58,11 +58,15 @@
                 <h1 style="color:black">Santa Cruz Birds</h1>
             </div>
         </div>
+        <p id="p1"></p>
     </div>
 </header>
-<div class="container fluid">
-    <div class="row">
+<div class="container contain-graph">
+    <div class="row graph-inputs">
+        <h5 class="required"> * required fields </h5>
+        <h5 class="optional"> * at least one </h5>
         <div class="col-xs-12 col-sm-3">
+            <h4>Bird Name: <span class="required">*</span> </h4>
             <select class="dropdownBirds first form-control  form-group">
                 <option disabled selected value> -- select bird --</option>
             </select>
@@ -72,21 +76,27 @@
             <!--<select class="dropdownBirds third  form-control form-group">-->
             <!--<option disabled selected value> &#45;&#45; select bird 3 &#45;&#45;</option>-->
             <!--</select>-->
-        </div>
-        <div class="col-xs-12 col-sm-5">
+            <h4>Location: <span class="required">*</span> </h4>
             <select class="location form-control form-group">
+                <option disabled selected value> -- location --</option>
                 <option>Neary Lagoon</option>
                 <option>Pogonip</option>
                 <option>San Lorenzo River</option>
                 <option>West Cliff</option>
                 <option>UCSC</option>
             </select>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+
+            <h4>Month: <span class="optional">*</span></h4>
             <select id="month" class="form-control form-group">
                 <option disabled selected value> -- month --</option>
             </select>
+            <h4>Start Year: <span class="optional">*</span></h4>
             <select class="start-year year form-control form-group">
                 <option disabled selected value> -- start year --</option>
             </select>
+            <h4>End year: </h4>
             <select class="end-year year form-control form-group">
                 <option disabled selected value> -- end year --</option>
             </select>
