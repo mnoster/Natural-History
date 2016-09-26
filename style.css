@@ -202,3 +202,7 @@ li{
 	height: 55vh;
 	width:100%;
 }
+.more-info{
+	float: right;
+	padding-right: 15px;
+}

@@ -51,6 +51,22 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="infoModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">info</h4>
+            </div>
+            <div class="modal-body">
+                <h4>This site is still in its early phase so there may not be data for every bird, date, and location. If you have spotted a bird not in the list let us know!</h4>
+                <h4>To inquire about your own account to input bird data contact Nicholas at <a>njporter10@gmail.com </a> </h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <header class="header">
     <div class="container">
         <div class="row">
@@ -58,13 +74,14 @@
                 <h1 style="color:black">Santa Cruz Birds   <img style="height:15vh" src="Images/molumen_Wood_Ibis_2.png"></h1>
             </div>
         </div>
-        <p id="p1"></p>
+        <!--<p id="p1"></p>-->
     </div>
 </header>
 <div class="container contain-graph">
     <div class="row graph-inputs">
         <h5 class="required"> * required fields </h5>
         <h5 class="optional"> * at least one </h5>
+        <h5 class="more-info"><a data-toggle="modal" data-target="#infoModal">More Info</a></h5>
         <div class="col-xs-12 col-sm-3">
             <h4>Bird Name: <span class="required">*</span> </h4>
             <select class="dropdownBirds first form-control  form-group">

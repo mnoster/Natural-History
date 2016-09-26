@@ -9,8 +9,7 @@ var birdTypes = ['Red-throated loon', 'Pacific loon', 'Common loon', 'Pied-Bille
 var month = ["January", 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var days = ['01', '02', '03', '04', '05', '06', '07', '08', '09', 10, 11, 12, 13, 14, 15,
             16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-var year = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018,
-            2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028];
+var year = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028,2029,2030];
 birdTypes = birdTypes.sort();
 $(document).ready(function () {
     dropdownNums();

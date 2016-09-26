@@ -171,6 +171,9 @@ p:focus{
 	margin-top: 10px;
 	background-color: white;
 }
+.contain-movies{
+	text-align: center;
+}
 /*-----------------Neary lagoon page------------------*/
 #changeimagesize{
 	height:60vh;

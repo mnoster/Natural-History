@@ -81,6 +81,7 @@ function getDataForGraph() {
                         year: response.year[i],
                         name: response.bird_name[i],
                         male: response.male[i],
+                        unknown:response.unknown_gender[i],
                         monthName: response.month[i],
                         month:response.year[i]+"-"+response.month[i],
                         female: response.female[i],
@@ -123,15 +124,15 @@ function initGraph(data, xCoordinate) {
         element: 'graphArea',
         data: data,
         xkey: xCoordinate,
-        ykeys: ['male', 'female', 'total'],
-        labels: ['male', 'female', 'total'],
+        ykeys: ['male', 'female','unknown', 'total'],
+        labels: ['male', 'female','unknown', 'total'],
         pointSize: 2,
         hideHover: 'auto',
         // smooth:false,
         behaveLikeLine:true,
-        lineColors:["red","blue","green"],
-        pointFillColors:["red","blue","black"],
-        pointStrokeColors:["red","blue","black"],
+        lineColors:["red","blue","green","grey"],
+        pointFillColors:["red","blue","black","orange"],
+        pointStrokeColors:["red","blue","black","orange"],
         fillOpacity: .3
     });
     $('#graphArea').append('<h3 style="margin:20px 0 20px 0">Click or hover on the points on the map for population details</h3>')
