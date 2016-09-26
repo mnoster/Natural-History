@@ -121,6 +121,15 @@ function sendToDB(tableData) {
                     $('.location').val('Neary Lagoon');
                     $('.date-value').val('');
                 }
+                if(response.message != 'success'){
+                    $('#sendToDB').append('<h4 style="color:red">'+response+'</h4>');
+                    var r = confirm(response);
+                    if (r == true) {
+                        $('#sendToDB').removeAttr('disabled');
+                        $('body').removeClass('waiting');
+
+                    }
+                }
             },
             error: function (response) {
                 console.log(response);

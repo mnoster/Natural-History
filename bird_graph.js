@@ -117,7 +117,8 @@ function getDataForGraph() {
     });
 }
 function initGraph(data, xCoordinate) {
-    $('#graphArea').html('');
+
+    $('#graphArea').html('').addClass('.graph-area');
     Morris.Area({
         element: 'graphArea',
         data: data,
@@ -133,7 +134,11 @@ function initGraph(data, xCoordinate) {
         pointStrokeColors:["red","blue","black"],
         fillOpacity: .3
     });
-
+    $('#graphArea').append('<h3 style="margin:20px 0 20px 0">Click or hover on the points on the map for population details</h3>')
+    $('.bird-title').text('')
+    $('html,body').animate({
+        scrollTop: $("#graphArea").offset().top
+    });
 }
 //this is for user login
 
@@ -157,7 +162,7 @@ function user_login() {
         success: function (response) {
             // console.log("response is success: ", response);
             if (response.success == true) {
-                window.location.replace('bird_chart.html');
+                window.location.replace('bird_chart.php');
             }
         },
         error: function (response) {

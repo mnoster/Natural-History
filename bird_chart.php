@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(empty($_SESSION)){
+    header('Location: '. "bird_graph.html");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

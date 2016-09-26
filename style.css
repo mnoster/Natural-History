@@ -198,3 +198,7 @@ li{
 .contain-graph{
 	background-color: white;
 }
+.graph-area{
+	height: 55vh;
+	width:100%;
+}
