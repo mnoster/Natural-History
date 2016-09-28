@@ -136,7 +136,7 @@ function initGraph(data, xCoordinate) {
         fillOpacity: .3
     });
     $('#graphArea').append('<h3 style="margin:20px 0 20px 0">Click or hover on the points on the map for population details</h3>')
-    $('.bird-title').text('')
+    $('.bird-title').text('');
     $('html,body').animate({
         scrollTop: $("#graphArea").offset().top
     });

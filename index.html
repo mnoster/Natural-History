@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="Images/ElectronicRU-Bird-Picture-300px.png" />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'/>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylesheet">
     <link rel='stylesheet' href='style.css'/>
     <title>wetland walk</title>
 </head>
@@ -33,17 +34,23 @@
 </header>
 
 <div class="main">
-    <div class="colored-squares container">
-        <a href="bird_graph.html"><p id="p2">Santa Cruz Bird Graph</p></a>
-        <a href="memoryMatch.html"><p id="p3">Neary Lagoon Birds Memory Match</p></a>
-        <a href="Microinvertebrates.html"><p id="p1">Freshwater Micro/Macro-invertebrates</p></a>
-        <a href="Turbidity_and_dissolved_oxygen.html"><p id="p6">Turbidity and Oxygen</p></a>
-        <a href="phtesting.html"><p id="p5">pH Testing</p></a>
+    <div class="colored-squares container " >
+        <a href="bird_graph.html"><p  data-aos="fade-right" data-aos-once="true"  id="p2">Santa Cruz Bird Graph</p></a>
+        <a href="memoryMatch.html"><p  data-aos="fade-left" data-aos-once="true"  id="p3">Neary Lagoon Birds Memory Match</p></a>
+        <a href="Microinvertebrates.html"><p  data-aos="fade-right" data-aos-once="true"  id="p1">Freshwater Micro/Macro-invertebrates</p></a>
+        <a href="Turbidity_and_dissolved_oxygen.html"><p data-aos="fade-left" data-aos-once="true"   id="p6">Turbidity and Oxygen</p></a>
+        <a href="phtesting.html"><p data-aos="fade-right" data-aos-once="true"   id="p5">pH Testing</p></a>
         <a href="Photos.html"><p id="p7">Photos</p></a>
-        <a href="Videos.html"><p id="p4">Videos</p></a>
+        <a href="Videos.html"><p  id="p4">Videos</p></a>
 
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script>
+
+    AOS.init();
+</script>
+
 </body>
 </html>
